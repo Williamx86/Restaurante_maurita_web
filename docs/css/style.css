@@ -1,6 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@import url(//db.onlinewebfonts.com/c/5d640771234976607eb77f96b3e69c1c?family=AvertaW01-Semibold);
+
+@font-face {
+    font-family: Contenido;
+    src: url('../src/fonts/Antipasto.otf');
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url('../src/fonts/Shink.otf');
+}
+
+body {
+    font-family: Contenido;
+}
+
+body span {
+    font-family: Titulos;
+}
+
 .menu {
-    display: absolute;
-    top: 0;
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    z-index: 3;
     padding: 0.8rem;
     display: flex;
     justify-content: space-between;
@@ -33,7 +59,7 @@
 }
 
 .logo_menu {
-    padding-left: 3.5rem;
+    padding-left: 5rem;
 }
 
 .logo_menu img {
@@ -51,7 +77,7 @@
 .banner video {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     pointer-events: none;
 }
 
@@ -60,7 +86,8 @@
 }
 
 .lateral {
-    position: absolute;
+    position: fixed;
+    z-index: 3;
     left: 0;
     top: 69px;
     background-color: #ffffff;
@@ -79,6 +106,7 @@
 }
 
 .lateral li a {
+    font-size: 1.2rem;
     color: #000000;
     text-decoration: none;
 }
@@ -87,7 +115,326 @@
     0% {
         width: 0%
     }
-    100%{
+
+    100% {
         width: 35%;
     }
+}
+
+.bg-1 {
+    padding: 5.5rem 0;
+    background-image: url('../src/img/background_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menus img {
+    border-radius: 50%;
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.menus a {
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+}
+
+.menus a:hover {
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+}
+
+.texto_hist {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+
+.texto_hist span {
+    font-size: 3rem;
+    color: #0064B0;
+}
+
+.texto_hist p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.slider {
+    position: relative;
+}
+
+.puntos {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    color: #ffffff;
+    font-size: 5rem;
+    margin-right: -50px;
+    cursor: pointer;
+}
+
+
+.slider img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.btn_leer {
+    width: 175px;
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+    border: 1px solid #FF7B00;
+}
+
+.btn_leer:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+.bg-2 span {
+    color: #0064B0;
+    font-size: 3rem;
+}
+
+.bg-2 {
+    background-image: url('../src/img/background_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.pern {
+    width: 90%;
+    border: 1px solid #FF7B00;
+    padding: 0.7rem 1rem;
+    margin-top: 1.5rem;
+}
+
+.pop {
+    width: 45%;
+}
+
+.btn_enviar {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+    border: 1px solid #FF7B00;
+}
+
+.btn_enviar:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+select {
+    color: #545245;
+}
+
+.sucursales {
+    color: #0064B0;
+    font-size: 3rem;
+}
+
+.ubicacion {
+    color: #FF7B00;
+    font-size: 2.5rem;
+}
+
+.cel {
+    color: #FF7B00;
+}
+
+.uber {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: #0056B4;
+    color: #ffffff;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cv input,
+select {
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_central {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.apps {
+    width: 200px;
+    object-fit: contain;
+}
+
+.redes_foo {
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.redes_foo:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy {
+    font-family: "AvertaW01-Semibold";
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0064B0;
+}
+
+@media only screen and (max-width:900px) {
+    .bg-1 {
+        background-position: initial;
+    }
+
+    .bg-2{
+        background-position: initial;
+    }
+
+    .historia {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px;
+    }
+
+    .texto_hist {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    .lateral {
+        position: fixed;
+        z-index: 3;
+        left: 0;
+        top: 69px;
+        background-color: #ffffff;
+        height: 89.5%;
+        animation: salir2 0.5s;
+    }
+
+    .logo_menu {
+        padding-left: 3.5rem;
+    }
+
+    .redes_menu:last-child {
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 125px;
+        object-fit: contain;
+    }
+
+    .ionic_2 {
+        padding-right: 0rem;
+    }
+
+    @keyframes salir2 {
+        0% {
+            width: 0%
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .logo_menu {
+        padding-left: 2rem;
+    }
+
+    .redes_menu:last-child {
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 125px;
+        object-fit: contain;
+    }
+
+    .ionic_2 {
+        padding-right: 0rem;
+    }
+
 }
