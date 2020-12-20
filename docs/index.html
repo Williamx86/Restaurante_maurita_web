@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Maurita</title>
 </head>
@@ -18,7 +19,7 @@
 <body>
 
     <header class="banner">
-        <div class="menu">
+        <div class="menu shadow">
             <div class="logo_io ionic_1" id="boton_menu">
                 <ion-icon name="menu"></ion-icon>
             </div>
@@ -48,6 +49,7 @@
 
         <div class="lateral oculto" id="lat">
             <ul class="pt-4">
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#seccion1">Menú</a></li>
                 <li><a href="#seccion2">Historia</a></li>
                 <li><a href="#seccion3">Reservaciones</a></li>
@@ -60,18 +62,18 @@
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-12 text-center titulo py-3">
-                    <span>Menú</span>
+                    <span data-aos="flip-left">Menú</span>
                 </div>
-                <div class="col-12 col-md-4 menus py-5">
-                    <img src="src/img/menu1.jpg">
-                    <a href="#">Mercadito</a>
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-right">
+                    <img src="src/img/menu1.jpg" loading="lazy">
+                    <a href="menu-mercadito.html">Mercadito</a>
                 </div>
-                <div class="col-12 col-md-4 menus py-5">
-                    <img src="src/img/menu2.jpg">
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-down">  
+                    <img src="src/img/menu2.jpg" loading="lazy">
                     <a href="#">Paseo El Carmen</a>
                 </div>
-                <div class="col-12 col-md-4 menus py-5">
-                    <img src="src/img/menu3.jpg">
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-left">
+                    <img src="src/img/menu3.jpg" loading="lazy">
                     <a href="#">Vía del Mar</a>
                 </div>
             </div>
@@ -80,7 +82,7 @@
 
     <div class="historia" id="seccion2">
         <div class="slider">
-            <img id="imagen" src="src/img/picture1.jpg">
+            <img id="imagen" src="src/img/picture1.jpg" loading="lazy">
             <div class="puntos">
                 <span onclick="cambiar(1)">&bull;</span>
                 <span onclick="cambiar(2)">&bull;</span>
@@ -88,23 +90,23 @@
             </div>
         </div>
         <div class="texto_hist px-5">
-            <span>Nuestra Historia</span>
+            <span data-aos="zoom-in-left">Nuestra Historia</span>
 
-            <p class="pt-4">Aproximadamente en julio de 1985, empecé con una de mis hermanas a vender mariscos de manera
+            <p class="pt-4" data-aos="zoom-in-left">Aproximadamente en julio de 1985, empecé con una de mis hermanas a vender mariscos de manera
                 ambulante,
                 hasta que un día me prestó 200 (colones) para que comenzara a trabajar por mi propia cuenta.</p>
 
-            <p>Viajaba desde Apopa, y pasaba comprando al mercado La Tiendona mariscos para venderlos en Ciudad Merliot
+            <p data-aos="zoom-in-left">Viajaba desde Apopa, y pasaba comprando al mercado La Tiendona mariscos para venderlos en Ciudad Merliot
                 , en ocasiones me bajaban de los buses por el olor a mariscos y decían “Ahi viene la señora del
                 pescado”... </p>
 
-            <a href="#" class="btn_leer">Seguir leyendo</a>
+            <a href="#" class="btn_leer" data-aos="zoom-in-left">Seguir leyendo</a>
         </div>
     </div>
 
     <div class="bg-2" id="seccion3">
         <div class="container">
-            <div class="row justify-content-around">
+            <div class="row justify-content-around" data-aos="flip-down">
                 <div class="col-12 text-center py-5">
                     <br>
                     <span>Reservaciones</span>
@@ -139,7 +141,7 @@
 
     <div class="container py-5" id="seccion4">
         <div class="row justify-content-around">
-            <div class="col-12 text-center sucursales py-5">
+            <div class="col-12 text-center sucursales py-5" data-aos="flip-up">
                 <span>Sucursales</span>
             </div>
             <div class="col-12 col-md-4 uber py-4">
@@ -206,9 +208,9 @@
                         </span> Envía tu CV a rrhh@restaurantemaurita.com.sv</p>
                 </div>
                 <div class="col-12 col-md-4 py-5 central">
-                    <img class="logo_central" src="src/img/whitelogo.png">
+                    <img class="logo_central" src="src/img/whitelogo.png" loading="lazy">
                     <div class="py-4">
-                        <img class="apps" src="src/img/apps.png">
+                        <img class="apps" src="src/img/apps.png" loading="lazy">
                     </div>
                     <div>
                         <a class="redes_foo pr-3" href="https://www.facebook.com/MauritaSV" target="blank">
@@ -254,7 +256,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,8 +1,17 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-@import url(//db.onlinewebfonts.com/c/5d640771234976607eb77f96b3e69c1c?family=AvertaW01-Semibold);
+@font-face {
+    font-family: AvertaW01-Semibold;
+    src: url('../src/fonts/Averta.otf');
+}
+
+@font-face {
+    font-family: Hartwell;
+    src: url('../src/fonts/Hartwell Alt Medium.otf');
+}
 
 @font-face {
     font-family: Contenido;
@@ -71,6 +80,13 @@ body span {
     display: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.banner_normal {
+    display: relative;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -350,7 +366,76 @@ select {
     background-color: #0064B0;
 }
 
+.menu_diseno {
+    padding: 8rem 0 5rem 0;
+    background: #ffffff;
+    position: relative;
+    font-family: Hartwell;
+}
+
+.menu_diseno .azulito {
+    text-align: justify;
+    font-family: Hartwell;
+    color: #0056B4;
+}
+
+.menu_diseno {
+    background-image: url('../src/img/fondo-menu.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.seccion_menu img {
+    display: block;
+    margin: 0 auto;
+}
+
+.seccion_menu table {
+    color: #686868;
+    margin-top: 1.3rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.imagenes_menu img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carta {
+    position: relative;
+}
+
+.bann {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    background-color: #0056B4;
+    width: 100%;
+    clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bann p {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+/* .seccion_menu table,
+th,
+td {
+    border: 1px solid #000000;
+} */
+
+.seccion_menu .precios {
+    text-align: right;
+}
+
 @media only screen and (max-width:900px) {
+    .menu_diseno {
+        background-position: initial;
+    }
+
     .bg-1 {
         background-position: initial;
     }
@@ -426,6 +511,10 @@ select {
 }
 
 @media only screen and (max-width:400px) {
+    .seccion_menu img {
+        width: 275px;
+    }
+
     .logo_menu {
         padding-left: 2rem;
     }
