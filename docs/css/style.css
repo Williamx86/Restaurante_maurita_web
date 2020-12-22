@@ -408,8 +408,9 @@ select {
     border-collapse: collapse;
 }
 
-.seccion_menu th, td {
-padding: 0.5rem 0;
+.seccion_menu th,
+td {
+    padding: 0.5rem 0;
 }
 
 .imagenes_menu img {
@@ -460,9 +461,115 @@ td {
     text-align: right;
 }
 
+.histo {
+    padding: 9rem 0 5rem 0;
+}
+
+.histo p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.histo span {
+    color: #0056B4;
+    font-size: 3rem;
+}
+
+.histo ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.histo li{
+    padding: 0 1rem;
+    list-style-type: none;
+    font-size: 4rem;   
+    cursor: pointer; 
+}
+
+.sliders{
+    position: relative;
+}
+
+.sliders ul{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -70px;
+    color: #ffffff;
+}
+
+#imagens{
+    animation: derecha 1s;
+}
+
+@keyframes derecha{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha2{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha3{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha4{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha22{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha33{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha44{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 @media only screen and (max-width:900px) {
 
-    .dif{
+    .dif {
         margin-top: -8rem;
     }
 
