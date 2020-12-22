@@ -475,24 +475,24 @@ td {
     font-size: 3rem;
 }
 
-.histo ul{
+.histo ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.histo li{
+.histo li {
     padding: 0 1rem;
     list-style-type: none;
-    font-size: 4rem;   
-    cursor: pointer; 
+    font-size: 4rem;
+    cursor: pointer;
 }
 
-.sliders{
+.sliders {
     position: relative;
 }
 
-.sliders ul{
+.sliders ul {
     position: absolute;
     bottom: 3%;
     left: 50%;
@@ -500,69 +500,76 @@ td {
     color: #ffffff;
 }
 
-#imagens{
+#imagens {
     animation: derecha 1s;
 }
 
-@keyframes derecha{
-    0%{
+@keyframes derecha {
+    0% {
         transform: translateX(50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha2{
-    0%{
+@keyframes derecha2 {
+    0% {
         transform: translateX(50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha3{
-    0%{
+@keyframes derecha3 {
+    0% {
         transform: translateX(50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha4{
-    0%{
+@keyframes derecha4 {
+    0% {
         transform: translateX(50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha22{
-    0%{
+@keyframes derecha22 {
+    0% {
         transform: translateX(-50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha33{
-    0%{
+@keyframes derecha33 {
+    0% {
         transform: translateX(-50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
-@keyframes derecha44{
-    0%{
+@keyframes derecha44 {
+    0% {
         transform: translateX(-50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
@@ -608,6 +615,14 @@ td {
 }
 
 @media only screen and (max-width:750px) {
+    .contentp{
+        text-align: center;
+    }
+
+    .histo span {
+        font-size: 2.5rem;
+    }
+
     .quitar {
         display: none;
     }
@@ -656,6 +671,12 @@ td {
 }
 
 @media only screen and (max-width:400px) {
+    .histo {
+        padding: 6rem 0 5rem 0;
+    }
+    .menu{
+        position: absolute;
+    }
     .seccion_menu img {
         width: 275px;
     }
