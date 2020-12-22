@@ -379,6 +379,16 @@ select {
     color: #0056B4;
 }
 
+.menu_diseno .azulito2 {
+    text-align: right;
+    font-family: Hartwell;
+    color: #0056B4;
+}
+
+.dif {
+    padding-top: 5rem;
+}
+
 .menu_diseno {
     background-image: url('../src/img/fondo-menu.jpg');
     background-position: top;
@@ -398,7 +408,12 @@ select {
     border-collapse: collapse;
 }
 
+.seccion_menu th, td {
+padding: 0.5rem 0;
+}
+
 .imagenes_menu img {
+    width: 90%;
     display: block;
     margin: 0 auto;
 }
@@ -416,7 +431,21 @@ select {
     clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
+.bannr {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    background-color: #0056B4;
+    width: 100%;
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 0% 100%);
+}
+
 .bann p {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+.bannr p {
     text-align: center;
     padding: 1rem 0 0 0;
 }
@@ -432,6 +461,11 @@ td {
 }
 
 @media only screen and (max-width:900px) {
+
+    .dif{
+        margin-top: -8rem;
+    }
+
     .menu_diseno {
         background-position: initial;
     }
@@ -467,6 +501,10 @@ td {
 }
 
 @media only screen and (max-width:750px) {
+    .quitar {
+        display: none;
+    }
+
     .texto_hist span {
         font-size: 2.3rem;
         color: #0064B0;
