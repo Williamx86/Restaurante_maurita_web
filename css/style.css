@@ -1,0 +1,701 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: AvertaW01-Semibold;
+    src: url('../src/fonts/Averta.otf');
+}
+
+@font-face {
+    font-family: Hartwell;
+    src: url('../src/fonts/Hartwell Alt Medium.otf');
+}
+
+@font-face {
+    font-family: Contenido;
+    src: url('../src/fonts/Antipasto.otf');
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url('../src/fonts/Shink.otf');
+}
+
+body {
+    font-family: Contenido;
+}
+
+body span {
+    font-family: Titulos;
+}
+
+.menu {
+    position: fixed;
+    background: #ffffff;
+    width: 100vw;
+    z-index: 3;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo_io {
+    font-size: 1.8rem;
+    color: #0064B0;
+}
+
+.ionic_1 {
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.redes_menu {
+    text-decoration: none;
+    color: #0064B0;
+}
+
+.redes_menu:hover {
+    text-decoration: none;
+    color: #0064B0;
+}
+
+.ionic_2 {
+    padding-right: 1rem;
+}
+
+.logo_menu {
+    padding-left: 5rem;
+}
+
+.logo_menu img {
+    width: 140px;
+    object-fit: contain;
+}
+
+.banner {
+    display: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner_normal {
+    display: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.oculto {
+    display: none;
+}
+
+.lateral {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 69px;
+    background-color: #ffffff;
+    height: 89.5%;
+    animation: salir 0.5s;
+}
+
+.lateral ul {
+    padding-left: 0;
+}
+
+.lateral li {
+    list-style: none;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.lateral li a {
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+@keyframes salir {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 35%;
+    }
+}
+
+.bg-1 {
+    padding: 5.5rem 0;
+    background-image: url('../src/img/background_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menus img {
+    border-radius: 50%;
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.menus a {
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+}
+
+.menus a:hover {
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+}
+
+.texto_hist {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+
+.texto_hist span {
+    font-size: 3rem;
+    color: #0064B0;
+}
+
+.texto_hist p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.slider {
+    position: relative;
+}
+
+.puntos {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    color: #ffffff;
+    font-size: 5rem;
+    margin-right: -50px;
+    cursor: pointer;
+}
+
+
+.slider img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.btn_leer {
+    width: 175px;
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+    border: 1px solid #FF7B00;
+}
+
+.btn_leer:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+.bg-2 span {
+    color: #0064B0;
+    font-size: 3rem;
+}
+
+.bg-2 {
+    background-image: url('../src/img/background_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.pern {
+    width: 90%;
+    border: 1px solid #FF7B00;
+    padding: 0.7rem 1rem;
+    margin-top: 1.5rem;
+}
+
+.pop {
+    width: 45%;
+}
+
+.btn_enviar {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #FF7B00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s linear;
+    border: 1px solid #FF7B00;
+}
+
+.btn_enviar:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #FF7B00;
+}
+
+select {
+    color: #545245;
+}
+
+.sucursales {
+    color: #0064B0;
+    font-size: 3rem;
+}
+
+.ubicacion {
+    color: #FF7B00;
+    font-size: 2.5rem;
+}
+
+.cel {
+    color: #FF7B00;
+}
+
+.uber {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: #0056B4;
+    color: #ffffff;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cv input,
+select {
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 1rem;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_central {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.apps {
+    width: 200px;
+    object-fit: contain;
+}
+
+.redes_foo {
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.redes_foo:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.premios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy {
+    font-family: "AvertaW01-Semibold";
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0064B0;
+}
+
+.menu_diseno {
+    padding: 8rem 0 5rem 0;
+    background: #ffffff;
+    position: relative;
+    font-family: Hartwell;
+}
+
+.menu_diseno .azulito {
+    text-align: justify;
+    font-family: Hartwell;
+    color: #0056B4;
+}
+
+.menu_diseno .azulito2 {
+    text-align: right;
+    font-family: Hartwell;
+    color: #0056B4;
+}
+
+.dif {
+    padding-top: 5rem;
+}
+
+.menu_diseno {
+    background-image: url('../src/img/fondo-menu.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.seccion_menu img {
+    display: block;
+    margin: 0 auto;
+}
+
+.seccion_menu table {
+    color: #686868;
+    margin-top: 1.3rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seccion_menu th,
+td {
+    padding: 0.5rem 0;
+}
+
+.imagenes_menu img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.carta {
+    position: relative;
+}
+
+.bann {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    background-color: #0056B4;
+    width: 100%;
+    clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bannr {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    background-color: #0056B4;
+    width: 100%;
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 0% 100%);
+}
+
+.bann p {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+.bannr p {
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+/* .seccion_menu table,
+th,
+td {
+    border: 1px solid #000000;
+} */
+
+.seccion_menu .precios {
+    text-align: right;
+}
+
+.histo {
+    padding: 9rem 0 5rem 0;
+}
+
+.histo p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.histo span {
+    color: #0056B4;
+    font-size: 3rem;
+}
+
+.histo ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.histo li {
+    padding: 0 1rem;
+    list-style-type: none;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.sliders {
+    position: relative;
+}
+
+.sliders ul {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    margin-left: -70px;
+    color: #ffffff;
+}
+
+#imagens {
+    animation: derecha 1s;
+}
+
+@keyframes derecha {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha2 {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha3 {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha4 {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha22 {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha33 {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes derecha44 {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .dif {
+        margin-top: -8rem;
+    }
+
+    .menu_diseno {
+        background-position: initial;
+    }
+
+    .bg-1 {
+        background-position: initial;
+    }
+
+    .bg-2 {
+        background-position: initial;
+    }
+
+    .historia {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px;
+    }
+
+    .texto_hist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    .contentp{
+        text-align: center;
+    }
+
+    .histo span {
+        font-size: 2.5rem;
+    }
+
+    .quitar {
+        display: none;
+    }
+
+    .texto_hist span {
+        font-size: 2.3rem;
+        color: #0064B0;
+    }
+
+    .lateral {
+        position: fixed;
+        z-index: 3;
+        left: 0;
+        top: 69px;
+        background-color: #ffffff;
+        height: 89.5%;
+        animation: salir2 0.5s;
+    }
+
+    .logo_menu {
+        padding-left: 3.5rem;
+    }
+
+    .redes_menu:last-child {
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 125px;
+        object-fit: contain;
+    }
+
+    .ionic_2 {
+        padding-right: 0rem;
+    }
+
+    @keyframes salir2 {
+        0% {
+            width: 0%
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .histo {
+        padding: 6rem 0 5rem 0;
+    }
+    .menu{
+        position: absolute;
+    }
+    .seccion_menu img {
+        width: 275px;
+    }
+
+    .logo_menu {
+        padding-left: 2rem;
+    }
+
+    .redes_menu:last-child {
+        display: none;
+    }
+
+    .logo_menu img {
+        width: 125px;
+        object-fit: contain;
+    }
+
+    .ionic_2 {
+        padding-right: 0rem;
+    }
+
+}

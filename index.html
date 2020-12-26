@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Maurita</title>
+</head>
+
+<body>
+
+    <header class="banner">
+        <div class="menu shadow">
+            <div class="logo_io ionic_1" id="boton_menu">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+
+            <div class="logo_menu">
+                <img src="src/img/bluelogo.png">
+            </div>
+
+            <div class="logo_io ionic_2">
+                <a class="redes_menu pr-2" href="https://www.facebook.com/MauritaSV" target="blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a class="redes_menu pr-2" href="https://www.instagram.com/mauritasv/" target="blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a class="redes_menu pr-3" href="https://twitter.com/mauritassv?lang=es" target="blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <video muted playsinline autoplay loop>
+                <source src="src/video/inicio.m4v" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="lateral oculto" id="lat">
+            <ul class="pt-4">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#seccion1">Menú</a></li>
+                <li><a href="#seccion2">Historia</a></li>
+                <li><a href="#seccion3">Reservaciones</a></li>
+                <li><a href="#seccion4">Sucursales</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="bg-1" id="seccion1">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 text-center titulo py-3">
+                    <span data-aos="flip-left">Menú</span>
+                </div>
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-right">
+                    <img src="src/img/menu1.jpg" loading="lazy">
+                    <a href="menu-mercadito.html">Mercadito</a>
+                </div>
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-down">
+                    <img src="src/img/menu2.jpg" loading="lazy">
+                    <a href="menu-2.html">Paseo El Carmen</a>
+                </div>
+                <div class="col-12 col-md-4 menus py-5" data-aos="fade-left">
+                    <img src="src/img/menu3.jpg" loading="lazy">
+                    <a href="menu-2.html">Vía del Mar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="historia" id="seccion2">
+        <div class="slider">
+            <img id="imagen" src="src/img/picture1.jpg" loading="lazy">
+            <div class="puntos">
+                <span onclick="cambiar(1)">&bull;</span>
+                <span onclick="cambiar(2)">&bull;</span>
+                <span onclick="cambiar(3)">&bull;</span>
+            </div>
+        </div>
+        <div class="texto_hist px-5">
+            <span data-aos="zoom-in-left">Nuestra Historia</span>
+
+            <p class="pt-4" data-aos="zoom-in-left">Aproximadamente en julio de 1985, empecé con una de mis hermanas a
+                vender mariscos de manera
+                ambulante,
+                hasta que un día me prestó 200 (colones) para que comenzara a trabajar por mi propia cuenta.</p>
+
+            <p data-aos="zoom-in-left">Viajaba desde Apopa, y pasaba comprando al mercado La Tiendona mariscos para
+                venderlos en Ciudad Merliot
+                , en ocasiones me bajaban de los buses por el olor a mariscos y decían “Ahi viene la señora del
+                pescado”... </p>
+
+            <a href="historia.html" class="btn_leer" data-aos="zoom-in-left">Seguir leyendo</a>
+        </div>
+    </div>
+
+
+    <div class="container py-5" id="seccion4">
+        <div class="row justify-content-around">
+            <div class="col-12 text-center sucursales py-5" data-aos="flip-up">
+                <span>Sucursales</span>
+            </div>
+            <div class="col-12 col-md-4 uber py-4">
+                <ion-icon name="pin" class="ubicacion"></ion-icon>
+                <h3 class="pt-4" data-aos="flip-up">Paseo del Carmen</h3>
+                <p>
+                    Santa Tecla 1a Calle poniente #1-4
+                    Paseo El Carmen Santa Tecla
+                    a la altura del palacio tecleño.
+                </p>
+                <p><span class="cel">
+                        <ion-icon name="call"></ion-icon>
+                    </span>2566-8170</p>
+            </div>
+            <div class="col-12 col-md-4 uber py-4">
+                <ion-icon name="pin" class="ubicacion"></ion-icon>
+                <h3 class="pt-4" data-aos="flip-up">Mercadito Merliot</h3>
+                <p>
+                    Av. Las Arboledas, Jardines de la Hacienda,
+                    Mercado Municipal de Antiguo Cuscatlán
+                    Conocido como
+                    "El Mercadito de Merliot"
+                </p>
+                <p><span class="cel">
+                        <ion-icon name="call"></ion-icon>
+                    </span>2278-0599</p>
+                <p><span class="cel">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </span>7744-2313</p>
+            </div>
+            <div class="col-12 col-md-4 uber py-4">
+                <ion-icon name="pin" class="ubicacion"></ion-icon>
+                <h3 class="pt-4" data-aos="flip-up">Via del Mar</h3>
+                <p>
+                    Carretera al Puerto de la Libertad
+                    La Libertad Km 12 ½
+                    Plaza Via del Mar, Nuevo Cuscatlán.
+                </p>
+                <p><span class="cel">
+                        <ion-icon name="call"></ion-icon>
+                    </span>2510-4040</p>
+                <p><span class="cel">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </span>7720-1140</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-2" id="seccion3">
+        <div class="container">
+            <div class="row justify-content-around" data-aos="flip-down">
+                <div class="col-12 text-center py-5">
+                    <br>
+                    <span>Reservaciones</span>
+                    <div class="py-5">
+                        <form action="procesar.php" method="POST">
+                            <input class="pern" type="text" placeholder="Nombre y Apellido" name="nombre">
+                            <input class="pern pop" type="text" placeholder="Teléfono" name="telefono">
+                            <input class="pern pop" type="text" placeholder="Correo Electrónico" name="correo">
+                            <select class="pern" name="sucursal" id="sucursal">
+                                <option disabled selected>Sucursal</option>
+                                <option value="Mercadito">Mercadito</option>
+                                <option value="Paseo El Carmen">Paseo El Carmen</option>
+                                <option value="Vía del Mar">Vía del Mar</option>
+                            </select>
+                            <select class="pern" name="Tipo de evento" id="sucursal">
+                                <option disabled selected>Tipo de evento</option>
+                                <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="Bodas">Bodas</option>
+                                <option value="Graduaciones">Graduaciones</option>
+                                <option value="Baby Shower">Baby Shower</option>
+                                <option value="Eventos ejecutivos">Eventos ejecutivos</option>
+                                <option value="Reuniones familiares">Reuniones familiares</option>
+                                <option value="Despedidas de solter@">Despedidas de solter@</option>
+                            </select>
+                        </form>
+                        <a class="btn_enviar" href="#">Enviar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between py-5">
+                <div class="col-12 col-md-4 py-5 cv">
+                    <h4>Unete a nuestro equipo</h4>
+                    <form action="procesar_cv.php" method="POST">
+                        <input type="text" name="nombre_completo" placeholder="Nombre y Apellido">
+                        <input type="text" name="telefono" placeholder="Teléfono">
+                        <select name="puesto" id="puesto">
+                            <option value="-">Puesto</option>
+                        </select>
+                    </form>
+                    <p class="mt-3"> <span>
+                            <ion-icon name="mail"></ion-icon>
+                        </span> Envía tu CV a rrhh@restaurantemaurita.com.sv</p>
+                </div>
+                <div class="col-12 col-md-4 py-5 central">
+                    <img class="logo_central" src="src/img/whitelogo.png" loading="lazy">
+                    <div class="py-4">
+                        <img class="apps" src="src/img/apps.png" loading="lazy">
+                    </div>
+                    <div>
+                        <a class="redes_foo pr-3" href="https://www.facebook.com/MauritaSV" target="blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a class="redes_foo pr-3" href="https://www.instagram.com/mauritasv/" target="blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a class="redes_foo" href="https://twitter.com/mauritassv?lang=es" target="blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 py-5 premios">
+                    <h4>Premios</h4>
+                    <p class="pt-2">
+                        BID QUALITY AWARD 2018
+                        Premio a calidad categoría Oro
+                        Ginebra, Suiza
+                    </p>
+                    <p class="pt-2">
+                        BUSINESS MANAGEMENT AWARD 2018
+                        Premio a la gestión empresarial
+                        Medellin , Colombia
+                    </p>
+                    <p class="pt-2">
+                        LATIN AMERICA QUALITY 2019
+                        Premio a empresa Centroamericana del año
+                        Ciudad de Panamá, Panamá
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            &copy; 2021 CYT. Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
